@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <title>GP</title>
+</head>
+<body>
+    <header>
+        <div class="row no-gutters">
+            <a class="col-md-4 logo" href="index.html"></a>
+            <div class="col-md-8">
+                <div class="row no-gutters bg-color-name-title">
+                    <div class="col heading">
+                        <h1 class="name">Gabriel Pereira</h1>
+                        <h2 class="title"> Full Stack Developer</h2>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <ul id="nav" class="list-inline menucontainer">
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem">
+                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
+                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
+                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                            </li>
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
+                                <a href="assets/cv/gabriel-pereira-cv.pdf" download class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-color-work-history section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="history-heading-wrapper">
+                            <h3 class="history-heading uppercase" id="history-title">
+                                Projects
+                            </h3>
+                            <div class="toggle-container">
+                                <button class="toggle-btn active" data-target="work">Projects</button>
+                                <button class="toggle-btn" data-target="education">Education</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-items" id="work-history">
+                    <div class="timeline-item" data-dates="2024">
+                        <h4>DocEcho - PDF to Audio and Text Translation</h4>
+                        <p>Python/Flask app with multilingual support and text-to-speech functionality. Features SQLite database and Render.com deployment.</p>
+                        <p class="project-links">
+                            <a href="https://docecho.onrender.com/" target="_blank" class="project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Live Site</a>
+                            <a href="https://github.com/Moodyw03/pdfaudio" target="_blank" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                        </p>
+                    </div>
+                    <div class="timeline-item" data-dates="2023">
+                        <h4>Moodloop - Stem Mixing Interface</h4>
+                        <p>Web-based audio mixing app using HTML5, CSS3, and Web Audio API. Features drag-and-drop functionality and Bootstrap responsive design.</p>
+                        <p class="project-links">
+                            <a href="https://moodloop.netlify.app/" target="_blank" class="project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Live Site</a>
+                            <a href="https://github.com/Moodyw03/moodloop-final" target="_blank" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                        </p>
+                    </div>
+                    <div class="timeline-item" data-dates="2023">
+                        <h4>MemoMingle  - Note-Taking App</h4>
+                        <p>Full-stack application with Flask, MongoDB, and JavaScript. Includes user authentication and real-time CRUD operations.</p>
+                        <p class="project-links">
+                            <a href="https://memomingle.vercel.app/" target="_blank" class="project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Live Site</a>
+                            <a href="https://github.com/Moodyw03/MemoMingle" target="_blank" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                        </p>
+                    </div>
+                    <div class="timeline-item" data-dates="2022">
+                        <h4>New World Disorder - E-Commerce</h4>
+                        <p>Django-based fashion platform with Printful API integration and Stripe payments. Features brutalist design and limited edition products.</p>
+                        <p class="project-links">
+                            <a href="https://www.newworlddisorder.shop/" target="_blank" class="project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Live Site</a>
+                            <a href="https://github.com/Moodyw03/new-world-disorder" target="_blank" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="history-items" id="education-history" style="display: none;">
+                    <div class="timeline-item" data-dates="2023 - 2024">
+                        <h4>Level 5 Web Development Diploma (Distinction)</h4>
+                        <p>City of Bristol College and Code Institute</p>
+                        <p>Skills: HTML, CSS, Python, JavaScript, SQL, Django, Node.js, React, Git, Machine Learning.</p>
+                    </div>
+                    <div class="timeline-item" data-dates="2018 - 2021">
+                        <h4>MU Degree: Electronic Music Composition & Audio Engineering (Merit)</h4>
+                        <p>University of West London, London College of Music</p>
+                        <p>Modules: Interactive Music Technology, Digital Audio Interface Design, Game Audio, Surround Recording, Music Technology, Dolby Atmos.</p>
+                    </div>
+                    <div class="timeline-item" data-dates="2004 - 2008">
+                        <h4>BA Degree: Audio Systems (Merit)</h4>
+                        <p>London Metropolitan University</p>
+                        <p>Modules: Music Education, Audio Post-Production, Experimental Sound, Live Sound and Recording Techniques, Future Media, Music Technology Project.</p>
+                    </div>
+                    <div class="timeline-item" data-dates="2001 - 2003">
+                        <h4>HND: Music Production and Music Business</h4>
+                        <p>South Thames College</p>
+                        <p>Modules: Composition, Music Technology, Sound Creation and Manipulation, Studio Recording and Engineering, Sound Design for Computer Games and Moving Image.</p>
+                    </div>
+                    <div class="timeline-item" data-dates="1995 - 1997">
+                        <h4>A Levels: History, Languages, Philosophy</h4>
+                        <p>Colegio Superior De Campos, Portugal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Skills</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Front End</h4>
+                                <p>
+                                    Proficient in HTML5, CSS3, JavaScript, and TypeScript for building responsive user interfaces.
+Experienced with frameworks and libraries like React, Bootstrap, and Tailwind CSS.
+Skilled in creating dynamic web applications with a focus on user experience and accessibility.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                <p>
+                                    Expertise in Node.js and Python for developing scalable backend services.
+Proficient with frameworks such as Django and Flask.
+Knowledgeable in database management using MongoDB, SQL Server, and SQLite.
+Experienced in building REST APIs within microservices architecture.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row progress-section">
+                    <div class="col">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+                                <span class="sr-only">85% complete</span>
+                            </div>
+                            <span class="progress-type">React / Node.js</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">TypeScript</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+                                <span class="sr-only">85% complete</span>
+                            </div>
+                            <span class="progress-type">Bootstrap / Tailwind CSS</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">REST APIs / Microservices</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
+                                <span class="sr-only">75% complete</span>
+                            </div>
+                            <span class="progress-type">Flask</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">MongoDB / NoSQL</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+                                <span class="sr-only">70% complete</span>
+                            </div>
+                            <span class="progress-type">C++</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
+                                <span class="sr-only">75% complete</span>
+                            </div>
+                            <span class="progress-type">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                    Full Stack Web Developer with expertise spanning Python, web automation, and innovative solutions. Adept at combining structural precision with creative design thinking to deliver seamless, impactful digital experiences.                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Need a printable version of my CV? Download it here.
+                    <a href="assets/cv/gabriel-pereira-cv.pdf" download class="cv-pdf">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <span class="sr-only">Download link.</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-xmark" aria-hidden="true"></i>
+                            <span class="sr-only">X (Twitter)</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtns = document.querySelectorAll('.toggle-btn');
+            const workHistory = document.getElementById('work-history');
+            const educationHistory = document.getElementById('education-history');
+            const historyTitle = document.getElementById('history-title');
+            const sectionColumn = document.querySelector('.bg-color-work-history');
+
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    toggleBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Show/hide appropriate section and update title
+                    if (this.dataset.target === 'work') {
+                        workHistory.style.display = 'block';
+                        educationHistory.style.display = 'none';
+                        historyTitle.textContent = 'Projects';
+                        sectionColumn.classList.remove('education-active');
+                    } else {
+                        workHistory.style.display = 'none';
+                        educationHistory.style.display = 'block';
+                        historyTitle.textContent = 'Education';
+                        sectionColumn.classList.add('education-active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
