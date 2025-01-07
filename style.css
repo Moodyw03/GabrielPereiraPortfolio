@@ -17,6 +17,7 @@
 .bg-color-work-history {
     background-color: #9b59b6;
     transition: background-color 0.3s ease;
+    min-height: 600px;
 }
 
 .bg-color-work-history.education-active {
@@ -111,6 +112,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
+    margin-bottom: 10px;
     color: #fff;
 }
 
@@ -118,7 +120,7 @@ header {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 28px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 90px;
     color: #fff;
 }
@@ -455,6 +457,9 @@ button[type="submit"]:hover {
 #education-history, #work-history {
     transition: display 0.3s ease;
     padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-right: 5px;
 }
 
 #education-history {
@@ -496,4 +501,32 @@ button[type="submit"]:hover {
     font-style: normal;
     font-size: 14px;
     line-height: 7px;
+}
+
+/* Style the scrollbar */
+#work-history::-webkit-scrollbar,
+#education-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+#work-history::-webkit-scrollbar-track,
+#education-history::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+#work-history::-webkit-scrollbar-thumb,
+#education-history::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+#work-history::-webkit-scrollbar-thumb:hover,
+#education-history::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Update existing styles to accommodate scrolling */
+.timeline-item:last-child {
+    margin-bottom: 20px;
 }
