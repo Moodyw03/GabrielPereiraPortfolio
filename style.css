@@ -302,8 +302,9 @@ footer {
 /* ----------------------------------------Work History */
 
 .history-heading {
+    font-size: 28px;
+    margin-bottom: 0;
     color: #fafafa;
-    margin-bottom: 50px;
 }
 
 .timeline-item {
@@ -422,19 +423,24 @@ button[type="submit"]:hover {
 
 .history-heading-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 20px;
+    gap: 15px;
 }
 
 .toggle-container {
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .toggle-btn {
-    padding: 5px 15px;
-    border: 1px solid #fafafa;
+    padding: 6px 15px;
+    font-size: 14px;
+    min-width: 90px;
+    border: 2px solid #fafafa;
     background: transparent;
     color: #fafafa;
     border-radius: 4px;
@@ -529,4 +535,66 @@ button[type="submit"]:hover {
 /* Update existing styles to accommodate scrolling */
 .timeline-item:last-child {
     margin-bottom: 20px;
+}
+
+/* Add styles for the experience section */
+.bg-color-work-history.experience-active {
+    background-color: #e67e22;  /* Orange color for experience section */
+}
+
+#experience-history {
+    max-height: 500px;
+    overflow-y: auto;
+    transition: display 0.3s ease;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+/* Update toggle container for three buttons */
+.toggle-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    padding: 5px 12px;
+    font-size: 14px;
+    min-width: 90px;
+}
+
+/* Style the scrollbar for experience section */
+#experience-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+#experience-history::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+#experience-history::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+#experience-history::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Media query for smaller screens */
+@media(max-width: 768px) {
+    .history-heading {
+        font-size: 24px;
+    }
+    
+    .toggle-container {
+        flex-wrap: wrap;
+    }
+    
+    .toggle-btn {
+        padding: 4px 12px;
+        font-size: 13px;
+        min-width: 80px;
+    }
 }

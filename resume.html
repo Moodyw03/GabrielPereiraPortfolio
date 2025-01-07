@@ -53,6 +53,7 @@
                             </h3>
                             <div class="toggle-container">
                                 <button class="toggle-btn active" data-target="work">Projects</button>
+                                <button class="toggle-btn" data-target="experience">Experience</button>
                                 <button class="toggle-btn" data-target="education">Education</button>
                             </div>
                         </div>
@@ -90,6 +91,27 @@
                             <a href="https://www.newworlddisorder.shop/" target="_blank" class="project-link"><i class="fa fa-external-link" aria-hidden="true"></i> Live Site</a>
                             <a href="https://github.com/Moodyw03/new-world-disorder" target="_blank" class="project-link"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
                         </p>
+                    </div>
+                </div>
+                <div class="history-items" id="experience-history" style="display: none;">
+                    <div class="timeline-item" data-dates="02/2024 - 06/2024">
+                        <h4>St Marylebone School & Sixth Form</h4>
+                        <p>Computer Science Teacher</p>
+                        <p>Teaching Python, HTML/CSS, and computer science fundamentals to secondary school students.</p>
+                    </div>
+                    <div class="timeline-item" data-dates="03/2024 - 06/2024">
+                        <h4>Holland Park Secondary School</h4>
+                        <p>Computer Science Teacher</p>
+                        <p>Developing and delivering curriculum in programming and digital literacy.</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2020 - 08/2024">
+                        <h4>London School of Electronic Music</h4>
+                        <p>Music Technology and IT Tutor</p>
+                        <p>Teaching music production software and basic programming concepts.</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2024 - Present">
+                        <h4>Freelance Full Stack Web Developer</h4>
+                        <p>Building custom web solutions and applications for various clients.</p>
                     </div>
                 </div>
                 <div class="history-items" id="education-history" style="display: none;">
@@ -258,6 +280,7 @@ Experienced in building REST APIs within microservices architecture.
             const toggleBtns = document.querySelectorAll('.toggle-btn');
             const workHistory = document.getElementById('work-history');
             const educationHistory = document.getElementById('education-history');
+            const experienceHistory = document.getElementById('experience-history');
             const historyTitle = document.getElementById('history-title');
             const sectionColumn = document.querySelector('.bg-color-work-history');
 
@@ -268,17 +291,31 @@ Experienced in building REST APIs within microservices architecture.
                     // Add active class to clicked button
                     this.classList.add('active');
 
-                    // Show/hide appropriate section and update title
-                    if (this.dataset.target === 'work') {
-                        workHistory.style.display = 'block';
-                        educationHistory.style.display = 'none';
-                        historyTitle.textContent = 'Projects';
-                        sectionColumn.classList.remove('education-active');
-                    } else {
-                        workHistory.style.display = 'none';
-                        educationHistory.style.display = 'block';
-                        historyTitle.textContent = 'Education';
-                        sectionColumn.classList.add('education-active');
+                    // Hide all sections first
+                    workHistory.style.display = 'none';
+                    educationHistory.style.display = 'none';
+                    experienceHistory.style.display = 'none';
+
+                    // Show appropriate section and update title
+                    switch(this.dataset.target) {
+                        case 'work':
+                            workHistory.style.display = 'block';
+                            historyTitle.textContent = 'Projects';
+                            sectionColumn.classList.remove('education-active');
+                            sectionColumn.classList.remove('experience-active');
+                            break;
+                        case 'education':
+                            educationHistory.style.display = 'block';
+                            historyTitle.textContent = 'Education';
+                            sectionColumn.classList.add('education-active');
+                            sectionColumn.classList.remove('experience-active');
+                            break;
+                        case 'experience':
+                            experienceHistory.style.display = 'block';
+                            historyTitle.textContent = 'Work Experience';
+                            sectionColumn.classList.remove('education-active');
+                            sectionColumn.classList.add('experience-active');
+                            break;
                     }
                 });
             });
