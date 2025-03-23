@@ -97,14 +97,11 @@ header {
 }
 
 .logo {
-    background: url("foro copy.jpg");
+    background: url("gabbi.jpg");
+    min-height: 360px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
 }
 
 .name {
