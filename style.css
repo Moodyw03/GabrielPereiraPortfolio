@@ -97,11 +97,18 @@ header {
 }
 
 .logo {
-background: url("assets/gabbi.jpg");
     min-height: 360px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .name {
