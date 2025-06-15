@@ -97,7 +97,7 @@ header {
 }
 
 .logo {
-    background: url("gabbi.jpg");
+background: url("assets/gabbi.jpg");
     min-height: 360px;
     background-position: center;
     background-repeat: no-repeat;
